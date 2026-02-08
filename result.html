@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assessment Result</title>
+
+<style>
+body{
+    font-family:Segoe UI;
+    background:#f4f6f9;
+    padding:40px;
+}
+.box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    max-width:900px;
+    margin:auto;
+}
+.correct{color:green;}
+.wrong{color:red;}
+hr{margin:20px 0;}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Assessment Result</h2>
+    <h3 id="finalScore"></h3>
+    <div id="review"></div>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Assessment</title>
+
+<style>
+body{
+    font-family:Segoe UI;
+    background:#eef1f6;
+    padding:40px;
+}
+.box{
+    background:white;
+    max-width:800px;
+    margin:auto;
+    padding:30px;
+    border-radius:10px;
+}
+#timer{
+    float:right;
+    font-weight:bold;
+    color:#c0392b;
+}
+.option{margin:10px 0;}
+button{
+    margin-top:20px;
+    padding:10px 25px;
+    background:#1f3c88;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <span id="timer">120</span>
+    <h3 id="question"></h3>
+    <div id="options"></div>
+
+    <button onclick="prevQuestion()">⬅ Back</button>
+    <button onclick="nextQuestion()">Next ➡</button>
+    <button onclick="submitQuiz()" style="background:#c0392b;">Submit</button>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
